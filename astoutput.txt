@@ -1,0 +1,39 @@
+Program
+	|MainFun
+	|	|Var
+	|	|	|ID(x)
+	|	|Var
+	|	|	|ID(y)
+	|	|Var
+	|	|	|ID(z)
+	|	|INStmt
+	|	|	|ID_input(x)
+	|	|AssignmentStmt
+	|	|	|ID_Left(x)
+	|	|	|PLUS_Expr
+	|	|	|	|ID_Name(x)
+	|	|	|	|TK_NUM(5)
+	|	|AssignmentStmt
+	|	|	|ID_Left(y)
+	|	|	|TK_NUM(0)
+	|	|RepetitiveStmt
+	|	|	|GT_Exp
+	|	|	|	|ID_Left(x)
+	|	|	|	|ID_right(y)
+	|	|	|ConditionalStmt
+	|	|	|	|GT_Exp
+	|	|	|	|	|ID_Left(x)
+	|	|	|	|	|ID_right(y)
+	|	|	|	|ConditionalStmt
+	|	|	|	|	|GT_Exp
+	|	|	|	|	|	|ID_Left(x)
+	|	|	|	|	|	|ID_right(y)
+	|	|	|	|	|OUTStmt
+	|	|	|	|	|	|ID_output(x)
+	|	|	|AssignmentStmt
+	|	|	|	|ID_Left(x)
+	|	|	|	|MINUS_Expr
+	|	|	|	|	|ID_Name(x)
+	|	|	|	|	|TK_NUM(1)
+	|	|INStmt
+	|	|	|ID_input(z)

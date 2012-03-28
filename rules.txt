@@ -1,0 +1,73 @@
+Programs -> Functions
+Functions -> OtherFuns MainFun
+MainFun -> TK_KEY_MAIN TK_KEY_BEGIN FunBody TK_KEY_END
+
+OtherFuns -> Funct OtherFuns
+OtherFuns -> ε
+
+Funct -> TK_KEY_FUN TK_ID TK_OPEN Parameters TK_CLOSE TK_KEY_BEGIN FunBody TK_KEY_END
+Parameters -> TK_KEY_IN TK_COLON InList TK_SEMI TK_KEY_OUT TK_COLON OutID
+
+InList -> TK_KEY_NONE
+InList -> IDList
+
+IDList -> TK_ID RemID
+
+RemID -> TK_COMMA TK_ID RemID
+RemID -> ε
+
+OutID -> TK_KEY_NONE
+OutID -> TK_ID
+
+FunBody -> Declarations OtherStatements
+
+Declarations -> Declaration Declarations
+Declarations -> ε
+
+Declaration -> TK_KEY_VAR IDList TK_SEMI
+
+OtherStatements -> Statement Theta
+
+Theta ->OtherStatements
+Theta -> e
+
+Statement -> AssignmentStmt
+Statement -> ConditionalStmt
+Statement -> RepetitiveStmt
+Statement -> ReturnStmt
+Statement -> FunctionCall
+Statement -> IO_Stmt
+Statement -> TK_SEMI
+
+AssignmentStmt -> Alpha ExprOrFunc 
+Alpha -> TK_KEY_LET TK_ID TK_KEY_BE
+
+ExprOrFunc -> Expression TK_SEMI
+ExprOrFunc -> FunctionCall TK_SEMI
+
+Expression -> TK_ID
+Expression -> TK_NUM
+Expression -> TK_KEY_PLUS TK_OPEN Expression TK_COMMA Expression TK_CLOSE
+Expression -> TK_KEY_MINUS TK_OPEN Expression TK_COMMA Expression TK_CLOSE
+Expression -> TK_KEY_MUL TK_OPEN Expression TK_COMMA Expression TK_CLOSE
+Expression -> TK_KEY_DIV TK_OPEN Expression TK_COMMA Expression TK_CLOSE
+Expression -> TK_KEY_MODULO TK_OPEN Expression TK_COMMA TK_NUM TK_CLOSE
+Expression -> TK_OPEN Expression TK_CLOSE
+
+FunctionCall -> TK_KEY_FUN TK_ID TK_OPEN IDList TK_CLOSE
+ConditionalStmt -> TK_KEY_IF TK_OPEN BoolExp TK_CLOSE TK_KEY_BEGIN OtherStatements TK_KEY_END
+BoolExp -> TK_ID Type
+
+Type -> TK_EQUAL TK_ID
+Type -> TK_NOTEQUAL TK_ID
+Type -> TK_LT TK_ID
+Type -> TK_GT TK_ID
+Type -> TK_LEQ TK_ID
+Type -> TK_GEQ TK_ID
+Type -> e
+
+RepetitiveStmt -> TK_KEY_WHILE TK_OPEN BoolExp TK_CLOSE TK_KEY_BEGIN OtherStatements TK_KEY_END
+ReturnStmt -> TK_KEY_RETURN TK_ID TK_SEMI
+
+IO_Stmt -> TK_KEY_PRINT TK_ID TK_SEMI
+IO_Stmt -> TK_KEY_GET TK_ID TK_SEMI

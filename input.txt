@@ -1,0 +1,19 @@
+main
+begin
+	var x,y,z;
+	get x;
+	let x be plus(x,5);
+	let y be 0;
+	while(x>y)
+	begin
+		if(x>y)
+		begin
+			if(x>y)
+			begin
+			print x;
+			end
+		end
+		let x be minus(x,1);
+	end
+	get z;
+end

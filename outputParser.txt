@@ -1,0 +1,142 @@
+Programs
+	|Functions
+	|	|OtherFuns
+	|	|	|e
+	|	|MainFun
+	|	|	|TK_KEY_MAIN
+	|	|	|TK_KEY_BEGIN
+	|	|	|FunBody
+	|	|	|	|Declarations
+	|	|	|	|	|Declaration
+	|	|	|	|	|	|TK_KEY_VAR
+	|	|	|	|	|	|IDList
+	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|RemID
+	|	|	|	|	|	|	|	|TK_COMMA
+	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|RemID
+	|	|	|	|	|	|	|	|	|TK_COMMA
+	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|RemID
+	|	|	|	|	|	|	|	|	|	|e
+	|	|	|	|	|	|TK_SEMI
+	|	|	|	|	|Declarations
+	|	|	|	|	|	|e
+	|	|	|	|OtherStatements
+	|	|	|	|	|Statement
+	|	|	|	|	|	|IO_Stmt
+	|	|	|	|	|	|	|TK_KEY_GET
+	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|TK_SEMI
+	|	|	|	|	|Theta
+	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|AssignmentStmt
+	|	|	|	|	|	|	|	|	|Alpha
+	|	|	|	|	|	|	|	|	|	|TK_KEY_LET
+	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|TK_KEY_BE
+	|	|	|	|	|	|	|	|	|ExprOrFunc
+	|	|	|	|	|	|	|	|	|	|Expression
+	|	|	|	|	|	|	|	|	|	|	|TK_KEY_PLUS
+	|	|	|	|	|	|	|	|	|	|	|TK_OPEN
+	|	|	|	|	|	|	|	|	|	|	|Expression
+	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|TK_COMMA
+	|	|	|	|	|	|	|	|	|	|	|Expression
+	|	|	|	|	|	|	|	|	|	|	|	|TK_NUM
+	|	|	|	|	|	|	|	|	|	|	|TK_CLOSE
+	|	|	|	|	|	|	|	|	|	|TK_SEMI
+	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|	|	|AssignmentStmt
+	|	|	|	|	|	|	|	|	|	|	|Alpha
+	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_LET
+	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_BE
+	|	|	|	|	|	|	|	|	|	|	|ExprOrFunc
+	|	|	|	|	|	|	|	|	|	|	|	|Expression
+	|	|	|	|	|	|	|	|	|	|	|	|	|TK_NUM
+	|	|	|	|	|	|	|	|	|	|	|	|TK_SEMI
+	|	|	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|	|	|	|	|RepetitiveStmt
+	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_WHILE
+	|	|	|	|	|	|	|	|	|	|	|	|	|TK_OPEN
+	|	|	|	|	|	|	|	|	|	|	|	|	|BoolExp
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|Type
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_GT
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|TK_CLOSE
+	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_BEGIN
+	|	|	|	|	|	|	|	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|ConditionalStmt
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_IF
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_OPEN
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|BoolExp
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Type
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_GT
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_CLOSE
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_BEGIN
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|ConditionalStmt
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_IF
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_OPEN
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|BoolExp
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Type
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_GT
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_CLOSE
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_BEGIN
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|IO_Stmt
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_PRINT
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_SEMI
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|e
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_END
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|e
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_END
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|AssignmentStmt
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Alpha
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_LET
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_BE
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|ExprOrFunc
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Expression
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_MINUS
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_OPEN
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Expression
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_COMMA
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Expression
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_NUM
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_CLOSE
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_SEMI
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|e
+	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_END
+	|	|	|	|	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|	|	|	|	|OtherStatements
+	|	|	|	|	|	|	|	|	|	|	|	|	|Statement
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|IO_Stmt
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_KEY_GET
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_ID
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|TK_SEMI
+	|	|	|	|	|	|	|	|	|	|	|	|	|Theta
+	|	|	|	|	|	|	|	|	|	|	|	|	|	|e
+	|	|	|TK_KEY_END

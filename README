@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------
+INFORMATION:
+----------------------------------------------------------------------------------------
+
+1) RAM MAHESHWAR REDDY		-2008A7PS124P 
+
+
+-----------------------------------------------------------------------------------------
+HOW TO EXECUTE
+-------------------------------------------------------------------------------------------
+1)	make clean
+2)	make
+3) ./exe <inputProgram file>
+
+Outputs:-
+1) tokenStream.txt	--scanner output
+2) outputParser.txt --parser output with preorder printing of the tree
+3) astoutput.txt    -- ast  output with preorder
+4) symbolTable.txt  -- symbol table output with each variable/function in each line
+5) asmout.asm		--asm code which runs in masm,asm etc
+
+errors:-
+errors are printed on standard error(stderr)

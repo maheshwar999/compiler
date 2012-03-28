@@ -1,0 +1,6 @@
+IDENTIFIER   SCOPE   TYPE(VAR:0,FUN:1)
+-------------------------------------------------------------------------
+         x       1        0
+         y       1        0
+         z       1        0
+FILLED SYMBOL TABLE SUCCESSFULLY
